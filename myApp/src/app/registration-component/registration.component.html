@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"] {
+      width: 10cm;
+    }
+  
+body h1{
+      font-family: Times New Roman;
+    }
+   
+  </style>
+  
+</head>
+<body>
+  <h1>AGM Registration Form</h1>
+ 
+
+ <form>
+   <label for="creditUnionNo">Credit Union No:(ক্রেডিট ইউনিয়নের নম্বর)</label>
+    <input type="text" id="creditUnionNo" name="creditUnionNo" style="width: 5cm;" />
+
+  </form>
+  
+  
+  <form>
+    <label for="creditunionname">Credit Union Name:(ক্রেডিট ইউনিয়নের নাম)</label>
+    <input type="text" id="creditunionname" name="creditunionname" style="width: 10cm;" />
+
+  </form>
+  
+   <form>
+    <label for="attendeename">Attendee Name: (অংশগ্রহনকারীর নাম)</label>
+    <input type="text" id="attendeename" name="attendeename" style="width: 10cm;" />
+
+  </form>
+  
+  <form>
+    <label for="creditunionmobileno">Attendee Mobile No: (অংশগ্রহনকারীর মোবাইল নম্বর)</label>
+    <input type="text" id="creditunionmobileno" name="creditunionmobileno" style="width: 10cm;" />
+  </form>
+  
+  <form> <label for="creditunionmobileno">District Name: (জেলার নাম)</label></form>
+  
+  <select>
+    <option value="dhaka">Dhaka</option>
+    <option value="banana">Gazipur</option>
+    <option value="orange">Norsindi</option>
+    <option value="strawberry">Cox's Bazar</option>
+    <option value="watermelon">Dinajpur</option>
+  </select>
+
+ <form> <label for="dateofbirth">Date of Birth: (জন্ম তারিখ)</label></form>
+  <div class="dob-inputs">
+    <select id="dob-day" name="dob-day">
+      <option value="">Day</option>
+      <!-- Add options for days here -->
+    </select>
+    
+    <select id="dob-month" name="dob-month">
+      <option value="">Month</option>
+      <!-- Add options for months here -->
+    </select>
+    
+    <select id="dob-year" name="dob-year">
+      <option value="">Year</option>
+      <!-- Add options for years here -->
+    </select>
+  </div>
+  
+  <script>
+    // Populate day options
+    var daySelect = document.getElementById("dob-day");
+    for (var day = 1; day <= 31; day++) {
+      var option = document.createElement("option");
+      option.text = day;
+      option.value = day;
+      daySelect.appendChild(option);
+    }
+    
+    // Populate month options
+    var monthSelect = document.getElementById("dob-month");
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    for (var month = 0; month < months.length; month++) {
+      var option = document.createElement("option");
+      option.text = months[month];
+      option.value = month + 1;
+      monthSelect.appendChild(option);
+    }
+    
+    // Populate year options
+    var yearSelect = document.getElementById("dob-year");
+    var currentYear = new Date().getFullYear();
+    for (var year = 1950; year <= currentYear; year++) {
+      var option = document.createElement("option");
+      option.text = year;
+      option.value = year;
+      yearSelect.appendChild(option);
+    }
+  </script>
+
+
+  <form> <label for="creditunionmobileno">Sex: (লিঙ্গ)</label></form>
+  
+  <select>
+    <option value="dhaka">Male</option>
+    <option value="banana">Female</option>
+    
+  </select>
+
+<form> <label for="creditunionmobileno">Receipt no: (রশিদ নং)</label>
+<input type="text" id="attendeename" name="attendeename" style="width: 5cm;" />
+
+</form>
+
+<button type="submit">Submit</button>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
