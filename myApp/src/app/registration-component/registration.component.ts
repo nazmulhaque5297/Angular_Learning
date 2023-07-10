@@ -7,6 +7,6 @@ import { Component } from "@angular/core";
     
   })
   export class RegistrationComponent {
-    title = 'registrationComponent';
+    title = 'Registration';
   }
   
