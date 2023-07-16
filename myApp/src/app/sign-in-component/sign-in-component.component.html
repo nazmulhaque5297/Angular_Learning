@@ -36,5 +36,28 @@
         <p>The Email is : {{signIn.email}}</p>
         <p>The Password is : {{signIn.pass}}</p>
     </div>
+
+    <div class=" w-full h-20 bg-slate-400 mt-3">
+      <div class=" flex items-center justify-center text-lg">
+        <p> Two Way Data Binding</p>
+      </div>
+      <div class=" w-full h-8 flex items-center justify-center "  >
+         <div class=" w-3/6 h-full">
+          <input class=" w-full h-full" type="text" matInput placeholder="Type something.." [(ngModel)]="searchText">
+          </div>
+      
+          <div class=" w-1/12  h-full ml-1 border-spacing-3 bg-slate-700 flex items-center justify-center">   
+            <mat-icon matSuffix>search</mat-icon>
+          </div>
+      </div>
+
+      <div>
+        searchText is : {{searchText}}
+      </div>
+
+
+
+    </div>
+  
   </div>
   

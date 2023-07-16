@@ -12,6 +12,8 @@ export class SignInComponentComponent {
     pass : '01626100302nn'
   }
 
+   searchText:string = "hi"
+
 
   onHandleChangeEmail(event:any){
     this.signIn.email=event.target.value

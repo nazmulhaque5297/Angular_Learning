@@ -8,6 +8,12 @@ import { RegistrationComponent } from './registration-component/registration.com
 import { BaseComponentComponent } from './base-component/base-component.component';
 import { HeaderComponentComponent } from './header-component/header-component.component';
 import { SignInComponentComponent } from './sign-in-component/sign-in-component.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatIconModule} from '@angular/material/icon'
+import { FormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -15,7 +21,11 @@ import { SignInComponentComponent } from './sign-in-component/sign-in-component.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatIconModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
