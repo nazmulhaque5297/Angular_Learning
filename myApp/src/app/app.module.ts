@@ -12,12 +12,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatIconModule} from '@angular/material/icon'
 import { FormsModule } from '@angular/forms';
+import { PersonComponentComponent } from './person-component/person-component.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent,FirstComponent,RegistrationComponent, BaseComponentComponent, HeaderComponentComponent, SignInComponentComponent
+    AppComponent,FirstComponent,RegistrationComponent, BaseComponentComponent, HeaderComponentComponent, SignInComponentComponent, PersonComponentComponent
   ],
   imports: [
     BrowserModule,

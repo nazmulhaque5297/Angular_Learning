@@ -1,0 +1,23 @@
+<div class=" flex flex-wrap">
+    <div class=" mt-5 w-1/5 ml-14 h-fit bg-white flex flex-col justify-center items-center rounded-lg  " *ngFor=" let person of persons">
+        <div>
+            <img [src]="person.image" alt=""  class=" h-32 w-32 mt-5">
+        </div>
+     
+        <div class=" w-2/3 mt-5 flex-col items-center justify-center">
+            <p class=" text-base">Name : {{person.name}}</p>
+            <p class=" text-sm">age: {{person.age}}</p>
+            <p class="text-sm">coOperative: <b>{{person.coOperative}}</b> </p>
+        </div>
+
+        <div class="mt-5 mb-3">
+            <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                Update
+            </button>
+        </div>
+       
+      
+    </div>
+
+</div>
+
