@@ -13,12 +13,15 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatIconModule} from '@angular/material/icon'
 import { FormsModule } from '@angular/forms';
 import { PersonComponentComponent } from './person-component/person-component.component';
+import { ProductComponentComponent } from './product-component/product-component.component';
+import { ProductListComponent } from './product-component/product-list/product-list.component';
+import { SingleProductComponent } from './product-component/single-product/single-product.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent,FirstComponent,RegistrationComponent, BaseComponentComponent, HeaderComponentComponent, SignInComponentComponent, PersonComponentComponent
+    AppComponent,FirstComponent,RegistrationComponent, BaseComponentComponent, HeaderComponentComponent, SignInComponentComponent, PersonComponentComponent, ProductComponentComponent, ProductListComponent, SingleProductComponent
   ],
   imports: [
     BrowserModule,
